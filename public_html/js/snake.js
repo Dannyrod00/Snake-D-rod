@@ -4,6 +4,14 @@ var context;
 var screenwidth;
 var screenhight;
 
-function gameinitialize(){
+function gameInitialize(){
+    
+}
+
+function gameLoop(){
+    
+}
+
+function gameDraw(){
     
 }
