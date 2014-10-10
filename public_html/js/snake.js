@@ -14,5 +14,7 @@ function gameLoop(){
 }
 
 function gameDraw(){
+    contex.fillStyle = "rgb(167 ,0 ,176)";
+    contex.fillRect(0, 0, screenWidthv, screenHight);
     
 }
