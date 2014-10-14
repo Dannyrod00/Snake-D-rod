@@ -1,20 +1,44 @@
 var snake;
+var snakeLength;
+var snakeSize;
 
 var context;
-var screenwidth;
-var screenhight;
+var screenWidth;
+var screenHeight;
+
+gameInitialize();
+gameDraw();
 
 function gameInitialize(){
-    var canvas =  document.getElementById("game-screen");
+    var canvas = document.getElementById("game-screen");
+    context = canvas.getContext("2d");
+    
+    screenWidth = window.innerWidth;
+    screenHeight = window.innerHeight;
+    
+    canvas.width = screenWidth;
+    canvas.height = screenHeight;
     
 }
 
-function gameLoop(){
+function gameLoop() {
     
 }
 
-function gameDraw(){
-    contex.fillStyle = "rgb(167 ,0 ,176)";
-    contex.fillRect(0, 0, screenWidthv, screenHight);
+function gameDraw() {
+    context.fillStyle = "rgb(167 ,0 ,176)";
+    context.fillRect(0, 0, screenWidth, screenHeight);
+    
+}
+
+function snakeInitialize() {
+    
+}
+
+function snakeDraw() {
+    
+}
+
+function snakeUpdate() {
     
 }
