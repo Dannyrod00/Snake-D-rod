@@ -156,17 +156,17 @@ function keyboardHandler(event) {
 
     }
 
-    if (event.keyCode == "65" && snakeDirection != "Right") {
+    if ((event.keyCode == "65" || =="65" ) && snakeDirection != "Right") {
         snakeDirection = "left";
 
     }
 
-    if (event.keyCode == "87" && snakeDirection != "Down") {
+    if ((event.keyCode == "87" || =="87" ) && snakeDirection != "Down") {
         snakeDirection = "up";
 
     }
 
-    if (event.keyCode == "83" && snakeDirection != "Up") {
+    if ((event.keyCode == "83" || =="83" ) && snakeDirection != "Up") {
         snakeDirection = "down";
 
     }
