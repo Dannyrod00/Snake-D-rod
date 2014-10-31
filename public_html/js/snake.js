@@ -151,7 +151,7 @@ function keyboardHandler(event) {
 
     //these are the controls for WASD    
 
-    if (event.keyCode == "68" && snakeDirection != "Left") {
+    if ((event.keyCode == "68" || event.keyCode == "68") && snakeDirection != "Left") {
         snakeDirection = "right";
 
     }
@@ -178,17 +178,17 @@ function keyboardHandler(event) {
 
     }
 
-    if (event.keyCode == "37" && snakeDirection != "Right") {
+   else if (event.keyCode == "37" && snakeDirection != "Right") {
         snakeDirection = "left";
 
     }
 
-    if (event.keyCode == "38" && snakeDirection != "Down") {
+   else if (event.keyCode == "38" && snakeDirection != "Down") {
         snakeDirection = "up";
 
     }
 
-    if (event.keyCode == "40" && snakeDirection != "Up") {
+   else if (event.keyCode == "40" && snakeDirection != "Up") {
         snakeDirection = "down";
 
     }
