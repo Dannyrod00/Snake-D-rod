@@ -91,19 +91,19 @@ function snakeUpdate() {
     checkFoodCollisions(snakeHeadX, snakeHeadY);
     checkWallCollisions(snakeHeadX, snakeHeadY);
 
-    if (snakeDirection == "down") {
+    if (snakeDirection === "down") {
         snakeHeadY++;
     }
 
-    else if (snakeDirection == "right") {
+    else if (snakeDirection === "right") {
         snakeHeadX++;
     }
 
-    else if (snakeDirection == "up") {
+    else if (snakeDirection === "up") {
         snakeHeadY--;
     }
 
-    else if (snakeDirection == "left") {
+    else if (snakeDirection === "left") {
         snakeHeadX--;
     }
 
@@ -156,39 +156,39 @@ function keyboardHandler(event) {
 
     }
 
-   else if ((event.keyCode == "65" || == "65" ) && snakeDirection != "Right") {
+    if (event.keyCode == "65" && snakeDirection != "Right") {
         snakeDirection = "left";
 
     }
 
-  else if ((event.keyCode == "87" || == "87" ) && snakeDirection != "Down") {
+    if (event.keyCode == "87" && snakeDirection != "Down") {
         snakeDirection = "Up";
 
     
 
-   else if ((event.keyCode == "83" || == "83" ) && snakeDirection != "Up") {
+    if (event.keyCode == "83" && snakeDirection != "Up") {
         snakeDirection = "down";
 
     }
 
     //these are the controls for arrow keys
 
-    if ((event.keyCode == "39" || == "39" ) && snakeDirection != "Left") {
+    if (event.keyCode == "39" && snakeDirection != "Left") {
         snakeDirection = "right";
 
     }
 
-   else if ((event.keyCode == "37" || == "37" ) && snakeDirection != "Right") {
+   else if (event.keyCode == "37" && snakeDirection != "Right") {
         snakeDirection = "left";
 
     }
 
-   else if ((event.keyCode == "38" || == "38" ) && snakeDirection != "Down") {
+   else if (event.keyCode == "38" && snakeDirection != "Down") {
         snakeDirection = "up";
 
     }
 
-   else if ((event.keyCode == "40" || == "40" ) && snakeDirection != "Up") {
+   else if (event.keyCode == "40" && snakeDirection != "Up") {
         snakeDirection = "down";
 
     }
