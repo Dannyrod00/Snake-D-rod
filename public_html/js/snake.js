@@ -8,6 +8,7 @@ var food;
 var context;
 var screenWidth;
 var screenHeight;
+
 var gameState;
 var gameOver;
 
@@ -45,9 +46,11 @@ function gameInitialize() {
 
 function gameLoop() {
     gameDraw();
+    if (gameState === "play"){
     snakeUpdate();
     snakeDraw();
     foodDraw();
+    }
 
 }
 
@@ -225,10 +228,6 @@ setState(state);
 displayMenu(menu);
 centerMenuPositon(menu);
 
-
-function checkSnakeCollisions(snakeHeadX, snakeHeadY) {
-
-}
 function setState(state) {
     gameState = state;
     showMenu(state);
@@ -242,7 +241,7 @@ function showMenu(state) {
     }
 }
 
-function centerMenuPosition(menu) {
-    menu.style.top = (screenHeight / 2) - (menu.offetHeight / 2) + "px";
-    menu.style.left = (screenWidth / 2) - (menu.offsetWidth / 2) + "px";
-}
+//function centerMenuPosition(menu){
+//    menu.style.top = (screenHeight / 2) - (menu.offetHeight / 2) + "px";
+//    menu.style.left = (screenWidth / 2) - (menu.offsetWidth / 2) + "px";
+//}
